@@ -1,3 +1,2 @@
 ﻿  Cross_Zero.cpp
-D:\GIT\CPP_1_quarter\Cross_Zero\Cross_Zero.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
   Cross_Zero.vcxproj -> D:\GIT\CPP_1_quarter\Cross_Zero\x64\Debug\Cross_Zero.exe
