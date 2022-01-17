@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "56dd4980-4e49-4865-951b-b05570a275d3": {
+      "ProjectGuid": "56dd4980-4e49-4865-951b-b05570a275d3",
+      "DisplayName": "My_Dll_HW3",
+      "ColorIndex": 0
+    },
+    "c2e1c777-e1e6-450a-9e39-290d809b5623": {
+      "ProjectGuid": "c2e1c777-e1e6-450a-9e39-290d809b5623",
+      "DisplayName": "Test_DLL",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
