@@ -1,0 +1,5 @@
+ID: 1
+Name: Mike
+Department: OFICE
+Salary: 50000
+Size of: 8
