@@ -76,15 +76,15 @@ public:
 			return false;
 		}
 		else {
-			arr[length] = number;
-			length++;
+			arr[length++] = number;
+			//length++;
 			return true;
 		}
 	};
 	void pop() {
 		if (length > 0) {
-			arr[length] = 0;
-			length--;
+			arr[length--] = 0;
+			//length--;
 		}
 		else {
 			std::cout << "Nothing to drop." << std::endl;
