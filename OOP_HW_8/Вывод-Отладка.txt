@@ -1,0 +1,19 @@
+﻿"OOP_HW_8.exe" (Win32). Загружено "D:\GIT\CPP_1_quarter\OOP_HW_8\x64\Debug\OOP_HW_8.exe". Символы загружены.
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\ntdll.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\kernel32.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\KernelBase.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\msvcp140d.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140d.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140_1d.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\ucrtbased.dll". 
+Поток 0x17b8 завершился с кодом 0 (0x0).
+Вызвано исключение по адресу 0x00007FF816414F69 в OOP_HW_8.exe: исключение Microsoft C++: DivisionByZero по адресу памяти 0x000000F1454FF908.
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\sechost.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\rpcrt4.dll". 
+Вызвано исключение по адресу 0x00007FF816414F69 в OOP_HW_8.exe: исключение Microsoft C++: OffTheField по адресу памяти 0x000000F1454FFCE4.
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\kernel.appcore.dll". 
+"OOP_HW_8.exe" (Win32). Загружено "C:\Windows\System32\msvcrt.dll". 
+Поток 0x1258 завершился с кодом 0 (0x0).
+Поток 0x5a8c завершился с кодом 0 (0x0).
+Поток 0x5fb8 завершился с кодом 0 (0x0).
+Программа "[2284] OOP_HW_8.exe" завершилась с кодом 0 (0x0).
