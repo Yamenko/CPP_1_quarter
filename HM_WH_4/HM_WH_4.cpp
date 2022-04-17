@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <random>
 
 //=========================================================================================
 // 1. Имеется отсортированный массив целых чисел.Необходимо разработать функцию
@@ -33,7 +34,14 @@ void PrintVector(std::vector<T>& vector) {
 // Посчитайте ошибку, которой обладает цифровой сигнал по сравнению с аналоговым.
 //=========================================================================================
 
-
+double difVectors(std::vector<double>& v1, std::vector<int>& v2) {
+    double sumDif = 0;
+    for (int i = 0; i < v1.size(); i++)
+    {
+        sumDif += v1[i] - v2[i];
+    }
+    return sumDif;
+}
 
 
 
@@ -56,4 +64,21 @@ int main()
     
     std::cout << "------------------------------------------" << std::endl;
     std::cout << "----------------Task 2--------------------" << std::endl;
+    std::vector<double> v2;
+    std::vector<int> v3;
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    double num = 0.01;
+    std::exponential_distribution<double> distribution(num);
+    for (int i = 0; i < 100; i++){
+        v2.push_back(distribution(gen));
+        v3.push_back(v2[i]);
+    }
+    PrintVector(v2);
+    PrintVector(v3);
+
+    double dif = difVectors(v2, v3);
+    std::cout << "Diferent beetwen vectors = "<< dif << std::endl;
+    std::cout << "------------------------------------------" << std::endl;
 }
