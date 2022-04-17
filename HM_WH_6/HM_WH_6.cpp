@@ -9,7 +9,6 @@
 
 std::vector<int> bankOfThings;
 std::mutex myMutex1;
-std::mutex myMutex2;
 std::condition_variable condThing;
 
 //====================================================
@@ -62,7 +61,7 @@ void owner() {
     while (cnt < 20) {
         int thing = rand() % 1000;      //создаем (вещь)
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-        std::lock_guard<std::mutex> sclMutex(myMutex1); // блокируем поток чтобы добавить данные в вектор
+        std::lock_guard<std::mutex> sclMutex(myMutex1); // блокируем поток чтобы добавить данные в вектор 
         bankOfThings.push_back(thing);
         std::cout << "add thing = " << thing << std::endl;
         cnt++;
