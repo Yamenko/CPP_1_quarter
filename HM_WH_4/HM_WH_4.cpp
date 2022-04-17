@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 #include <random>
+#include <math.h>
 
 //=========================================================================================
 // 1. Имеется отсортированный массив целых чисел.Необходимо разработать функцию
@@ -38,7 +39,7 @@ double difVectors(std::vector<double>& v1, std::vector<int>& v2) {
     double sumDif = 0;
     for (int i = 0; i < v1.size(); i++)
     {
-        sumDif += v1[i] - v2[i];
+        sumDif += pow((v1[i] - v2[i]), 2);
     }
     return sumDif;
 }
