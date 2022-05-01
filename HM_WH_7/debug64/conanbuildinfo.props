@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="Conan-RootDirs">
+    <Conan-protobuf-Root>C:\.conan\893e33\1</Conan-protobuf-Root>
+    <Conan-libcurl-Root>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0</Conan-libcurl-Root>
+    <Conan-zlib-Root>$(USERPROFILE)\.conan\data\zlib\1.2.12\_\_\package\164640aad040835ac89882393a96d89200694f04</Conan-zlib-Root>
+    <Conan-openssl-Root>$(USERPROFILE)\.conan\data\openssl\1.1.1n\_\_\package\164640aad040835ac89882393a96d89200694f04</Conan-openssl-Root>
+  </PropertyGroup>
+  <PropertyGroup Label="ConanVariables">
+    <ConanPackageName></ConanPackageName>
+    <ConanPackageVersion></ConanPackageVersion>
+    <ConanCompilerFlags></ConanCompilerFlags>
+    <ConanLinkerFlags></ConanLinkerFlags>
+    <ConanPreprocessorDefinitions>CURL_STATICLIB=1;</ConanPreprocessorDefinitions>
+    <ConanIncludeDirectories>C:\.conan\893e33\1\include;$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0\include;$(USERPROFILE)\.conan\data\zlib\1.2.12\_\_\package\164640aad040835ac89882393a96d89200694f04\include;$(USERPROFILE)\.conan\data\openssl\1.1.1n\_\_\package\164640aad040835ac89882393a96d89200694f04\include;</ConanIncludeDirectories>
+    <ConanResourceDirectories>$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0\res;</ConanResourceDirectories>
+    <ConanLibraryDirectories>C:\.conan\893e33\1\lib;$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0\lib;$(USERPROFILE)\.conan\data\zlib\1.2.12\_\_\package\164640aad040835ac89882393a96d89200694f04\lib;$(USERPROFILE)\.conan\data\openssl\1.1.1n\_\_\package\164640aad040835ac89882393a96d89200694f04\lib;</ConanLibraryDirectories>
+    <ConanBinaryDirectories>C:\.conan\893e33\1\bin;$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0\bin;$(USERPROFILE)\.conan\data\openssl\1.1.1n\_\_\package\164640aad040835ac89882393a96d89200694f04\bin;</ConanBinaryDirectories>
+    <ConanLibraries>libprotocd.lib;libprotobufd.lib;libcurl.lib;zlib.lib;libssld.lib;libcryptod.lib;</ConanLibraries>
+    <ConanSystemDeps>crypt32.lib;ws2_32.lib;advapi32.lib;user32.lib;</ConanSystemDeps>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LocalDebuggerEnvironment>PATH=%PATH%;C:\.conan\893e33\1\bin;$(USERPROFILE)\.conan\data\libcurl\7.80.0\_\_\package\7fd7e950d4a5d8fc8ccd6bc8409863b12e1ce4b0\bin;$(USERPROFILE)\.conan\data\openssl\1.1.1n\_\_\package\164640aad040835ac89882393a96d89200694f04\bin;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ConanPreprocessorDefinitions)%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>$(ConanCompilerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ConanLibraryDirectories)%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ConanLibraries)%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(ConanSystemDeps)%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>$(ConanLinkerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ConanIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>$(ConanPreprocessorDefinitions)%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>$(ConanCompilerFlags) %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

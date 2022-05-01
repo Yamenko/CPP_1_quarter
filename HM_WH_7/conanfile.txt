@@ -1,0 +1,6 @@
+[requires]
+protobuf/3.17.1
+libcurl/7.80.0
+
+[generators]
+visual_studio
